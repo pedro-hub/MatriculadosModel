@@ -1,0 +1,33 @@
+﻿
+@model CursosModel
+@{
+    ViewData["Title"] = "Alterar";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">Editar Curso</h1>
+
+
+</div>
+
+<form asp-controller="Cursos" asp-action="ConfirmarEdicao" method="post">
+
+    <input type="hidden" asp-for="Id" />
+   
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Curso</label>
+        <input type="text" asp-for=" Curso" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        @Html.ValidationMessageFor(x => x.Curso)
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Horas De Curso</label>
+        <input type="text" asp-for="HorasCurso" class="form-control" id="exampleInputPassword1">
+        @Html.ValidationMessageFor(x => x.HorasCurso)
+    </div>
+
+
+    <a class="btn btn-secondary " asp-controller="Cursos" asp-action="Cursos">Voltar</a>
+    <button type="submit" class="btn btn-primary">Editar</button>
+
+</form>

@@ -1,0 +1,33 @@
+﻿
+@model CursosModel
+@{
+    ViewData["Title"] = "AdicionarCursos";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">Adicionar Curso</h1>
+
+
+</div>
+
+<form asp-controller="Cursos" asp-action="CriarCurso" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Curso</label>
+        <input type="text" asp-for="Curso" class="form-control" placeholder="Digite o Nome Do Curso">
+        @Html.ValidationMessageFor(x => x.Curso)
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Horas De curso</label>
+        <input type="text" asp-for="HorasCurso" class="form-control" placeholder="Digite A carga horaria do Curso">
+        @Html.ValidationMessageFor(x => x.HorasCurso)
+    </div>
+    <a class="btn btn-secondary " asp-controller="Cursos" asp-action="Cursos">Voltar</a>
+    <button type="submit" class="btn btn-primary ">Adicionar</button>
+
+</form>
+
+
+
+

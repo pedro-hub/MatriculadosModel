@@ -1,0 +1,41 @@
+﻿
+@model AlunosModel 
+@{
+    ViewData["Title"] = "AdicionarAlunos";
+}
+
+<div class="text-center">
+
+ <h1 class="display-4">Adicionar Aluno</h1>
+
+
+    </div>
+
+<form asp-controller="Alunos" asp-action="CriarAluno" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o Nome Do Aluno">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Sobrenome</label>
+        <input type="text" asp-for="Sobrenome" class="form-control" placeholder="Digite o Sobrenome Do Aluno">
+        @Html.ValidationMessageFor(x => x.Sobrenome)
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">idade</label>
+        <input type="text" asp-for="Idade" class="form-control" placeholder="Digite a idade Do Aluno">
+        @Html.ValidationMessageFor(x => x.Idade)
+    </div>
+
+
+    <a class="btn btn-secondary" asp-controller="Alunos" asp-action="Alunos">Voltar</a>
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+
+</form>
+  
+
+
+

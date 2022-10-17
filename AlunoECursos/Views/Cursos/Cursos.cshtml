@@ -1,0 +1,64 @@
+﻿@model List<CursosModel>
+@{
+    ViewData["Title"] = "Cursos";
+}
+<div class="text-center">
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-success btn-sm close-alert" aria-label="Close">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {<div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+    <h1 class="display-4">Cursos Cadastrados</h1>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a role="button" class="btn btn-primary" asp-controller="Cursos" asp-action="AdicionarCursos">Adicionar</a>
+
+    </div>
+    <br />
+    <table class="table" id="table-Cursos">
+        <thead class="table-dark">
+            <tr>
+
+                <th scope="col">Curso</th>
+                <th scope="col">Horas de Curso</th>
+                <th scope="col"></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (CursosModel Cursos in Model)
+                {
+                    <tr>
+
+                        <td>@Cursos.Curso</td>
+                        <td>@Cursos.HorasCurso</td>
+                        
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <a role="button" class="btn btn-danger" asp-route-id="@Cursos.Id" asp-controller="Cursos" asp-action="Excluir">Excluir</a>
+                                <a role="button" class="btn btn-success" asp-route-id="@Cursos.Id" asp-controller="Cursos" asp-action="Alterar">Alterar</a>
+                            </div>
+
+                        </td>
+                    </tr>
+                }
+            }
+
+
+        </tbody>
+    </table>
+</div>
+

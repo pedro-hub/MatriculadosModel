@@ -14,6 +14,8 @@ namespace AlunoECursos.Repositorio
         MatriculadosModel AdicionarMatricula(MatriculadosModel Matricula);
 
         List<MatriculadosModel> Buscartodos();
+
+       MatriculadosModel Atualizar(MatriculadosModel Matricula);
         bool ApagarMatricula(int id);
        
     }

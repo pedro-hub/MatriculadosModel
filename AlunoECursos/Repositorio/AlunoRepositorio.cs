@@ -36,7 +36,7 @@ namespace AlunoECursos.Repositorio
         {
             AlunosModel AlunosDb = ListarPorIdAlunos(Alunos.Id);
 
-            if (AlunosDb == null) throw new Exception("Houve um erro na Edição do Contato");
+            if (AlunosDb == null) throw new Exception("Houve um erro na Edição do Aluno");
             {
                 AlunosDb.Nome = Alunos.Nome;
                 AlunosDb.Sobrenome = Alunos.Sobrenome;

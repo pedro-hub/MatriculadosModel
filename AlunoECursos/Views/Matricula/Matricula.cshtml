@@ -44,15 +44,17 @@
                 foreach (MatriculadosModel Matricula in Model)
                 {
                     <tr>
-                        <td>@Matricula.Alunos</td>
-                        <td>@Matricula.Cursos</td>
+                        <td>@Matricula.Alunos.Nome</td>
+                       
+                        <td>@Matricula.Cursos.Curso</td>
+                        
                         <td>@Matricula.DataInicio</td>
 
 
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                 <a role="button" class="btn btn-danger" asp-route-id="@Matricula.Id" asp-controller="Matricula" asp-action="Excluir">Excluir</a>
-
+                                <a role="button" class="btn btn-success" asp-route-id="@Matricula.Id" asp-controller="Matricula" asp-action="Alterar">Alterar</a>
                             </div>
 
                         </td>

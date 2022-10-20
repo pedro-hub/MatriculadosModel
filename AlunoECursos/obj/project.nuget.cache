@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "jlTcL8r8nEkwY4djSVtodmTuaSBko+v3SQoTnSo85GN5KOpf8LwsLUvuibnkNtdL2sWdJwAdgLtxOqFIWd65hA==",
+  "dgSpecHash": "m2JhdrgsmuXf4awGwIP4h7ibczsUb7HHmumsmDrpALUkDwum6rKvoHv9KiqimVDvA8gA/5wLcjXxSzZsDsLxRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pedro.hsantos\\OneDrive - Sinqia\\Área de Trabalho\\TabelaCursos\\AlunoECursos\\AlunoECursos.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pedro.hsantos\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\pedro.hsantos\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pedro.hsantos\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\pedro.hsantos\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.17\\microsoft.aspnetcore.mvc.razor.extensions.5.0.17.nupkg.sha512",
@@ -133,16 +132,5 @@
     "C:\\Users\\pedro.hsantos\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\pedro.hsantos\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'EntityFramework 5.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

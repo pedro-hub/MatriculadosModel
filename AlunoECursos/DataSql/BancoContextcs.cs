@@ -12,10 +12,7 @@ namespace AlunoECursos.DataSql
 {
     public class BancoContextcs : DbContext
     {
-        public BancoContextcs()
-        {
-            
-        }
+
 
         public BancoContextcs(DbContextOptions<BancoContextcs> options) :base(options)
         { 

@@ -23,7 +23,7 @@ namespace AlunoECursos.Models
         [Required(ErrorMessage = "Digite As do Horas")]
         public string HorasCurso { get; set; }
 
-        public virtual MatriculadosModel CursosId { get; set; }
+       
 
 
 

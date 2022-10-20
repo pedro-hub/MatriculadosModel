@@ -25,8 +25,7 @@ namespace AlunoECursos.Models
 
 
          
-        public virtual MatriculadosModel AlunosId { get; set; }
-
+       
 
         
 

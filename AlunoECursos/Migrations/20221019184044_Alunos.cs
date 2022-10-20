@@ -2,7 +2,7 @@
 
 namespace AlunoECursos.Migrations
 {
-    public partial class AlunosECursos : Migration
+    public partial class Alunos : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

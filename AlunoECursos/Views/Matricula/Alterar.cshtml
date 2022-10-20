@@ -2,7 +2,7 @@
 @model MatriculasViewModel
 
 @{
-    ViewData["Title"] = "AdicionarMatriculas";
+    ViewData["Title"] = "editar";
 }
 
 <div class="form-horizontal">
@@ -10,35 +10,28 @@
     <h4 class="display-4">Adicionar Matriculados</h4>
 </div>
 
-@using (Html.BeginForm("AdicionarMatricula", "Matricula", FormMethod.Post, new { @Id = "Form1" }))
+@using (Html.BeginForm("Alterar", "Matricula", FormMethod.Post, new { @Id = "Form1" }))
 {
 
+   
     <div class="form-group">
         @Html.LabelFor(model => model.AlunosId, htmlAttributes: new { @Class = "control-label col-md-2" })
         <div class="form-group">
             @Html.DropDownListFor(m => m.AlunosId, Model.Alunoslista, new { @class = "form-control" })
-
         </div>
     </div>
     <div class="form-group">
         @Html.LabelFor(model => model.CursosId, htmlAttributes: new { @Class = "control-label col-md-2" })
         <div class="form-group">
-      
             @Html.DropDownListFor(m => m.CursosId, Model.Cursoslista, new { @class = "form-control" })
-
         </div>
     </div>
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Data De Inicio</label>
         <input type="date" asp-for="DataInicio" class="form-control" placeholder="Digite a Data De Inicio">
-        
-    </div>
 
-    <a class="btn btn-secondary" asp-controller="Matricula" asp-action="Matricula">Voltar</a>
-    <button type="submit" class="btn btn-primary">Adicionar</button>
+    </div>
+    <a class="btn btn-secondary " asp-controller="Matricula" asp-action="Matricula">Voltar</a>
+    <button type="submit" class="btn btn-primary">Editar</button>
 
 }
-
-
-
-
